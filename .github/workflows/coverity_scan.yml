@@ -55,10 +55,11 @@ jobs:
       # Step 7: Upload Coverity Results
       - name: Upload Coverity Results
         run: |
-          curl --form token=${{ secrets.COVERITY_SCAN_TOKEN }} \
+          curl --form token=cKnM8RghCiyxfoXsPAkZtg  \
                --form email=pushpa-latha.simhadri@capgemini.com \
                --form file=@cov-int.tgz \
                --form version=Coverity_Test_Build \
                --form description="Coverity Scan Build" \
-               https://scan.coverity.com/builds?project=pushpasimhadri/U_boot
+               https://scan.coverity.com/projects/31320/builds/init \
+               | tee response
 
