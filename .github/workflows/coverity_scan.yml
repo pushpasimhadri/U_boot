@@ -43,7 +43,7 @@ jobs:
       - name: Build Code with Coverity
         run: |
           coverity_tool/bin/cov-build --dir cov-int make rpi_4_defconfig 
-          coverity_tool/bin/cov-build --dir cov-int make CROSS_COMPILE=aarch64-linux-gnu- -j6
+          coverity_tool/bin/cov-build --dir cov-int CROSS_COMPILE=aarch64-linux-gnu- make -j6
 
       # Step 6: Compress the results directory for upload
       - name: Compress Coverity Results
