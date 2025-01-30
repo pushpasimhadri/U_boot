@@ -1,0 +1,3 @@
+.test-fdt-overlay-stacked.dtb.pre.o: \
+ test/overlay/.test-fdt-overlay-stacked.dtb.pre.tmp \
+ include/linux/kconfig.h include/generated/autoconf.h

@@ -1,0 +1,67 @@
+name: Coverity Scan
+
+on:
+  push:
+    branches:
+      - coverity_test
+
+jobs:
+  coverity:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code from the repository
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up dependencies
+      - name: Set up dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget curl tar build-essential
+
+      # Step 3: Download Coverity Scan Tool with Authentication
+      - name: Download Coverity Scan Tool
+        run: |
+          mkdir -p coverity_tool
+          for i in {1..5}; do
+            wget --header="Authorization: token ${{ secrets.COVERITY_SCAN_TOKEN }}" \
+            "https://scan.coverity.com/download/linux64?project=pushpasimhadri/U_boot" \
+            -O coverity_tool.tgz && break
+            echo "Retrying download... ($i/5)"
+            sleep 5
+          done
+          if [ ! -f coverity_tool.tgz ]; then
+            echo "Failed to download Coverity Scan Tool after 5 attempts."
+            exit 1
+          fi
+          tar -xvzf coverity_tool.tgz -C coverity_tool --strip-components=1
+
+      # Step 4: Check for cov-build tool
+      - name: Check for cov-build tool
+        run: |
+          if [ ! -f "coverity_tool/bin/cov-build" ]; then
+            echo "Error: cov-build tool not found!"
+            exit 1
+          fi
+
+      # Step 5: Build the code using Coverity
+      - name: Build Code with Coverity
+        run: |
+          coverity_tool/bin/cov-build --dir cov-int make -j$(nproc)
+
+      # Step 6: Compress the results directory for upload
+      - name: Compress Coverity Results
+        run: |
+          tar -czvf cov-int.tgz cov-int
+
+      # Step 7: Upload Coverity Results
+      - name: Upload Coverity Results
+        run: |
+          curl --form token=${{ secrets.COVERITY_SCAN_TOKEN }} \
+               --form email=pushpa-latha.simhadri@capgemini.com \
+               --form file=@cov-int.tgz \
+               --form version=Coverity_Test_Build \
+               --form description="Coverity Scan Build" \
+               https://scan.coverity.com/builds?project=pushpasimhadri/U_boot
+

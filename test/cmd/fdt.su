@@ -1,0 +1,4 @@
+test/cmd/fdt.c:43:12:fdt_test_addr	32	static
+test/cmd/fdt.c:146:12:fdt_test_get	48	static
+test/cmd/fdt.c:111:12:fdt_test_resize	320	static
+test/cmd/fdt.c:198:5:do_ut_fdt	0	static

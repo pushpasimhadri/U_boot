@@ -1,0 +1,4 @@
+common/fdt_simplefb.c:18:12:fdt_simplefb_configure_node	64	static
+common/fdt_simplefb.c:53:5:fdt_simplefb_add_node	32	static
+common/fdt_simplefb.c:74:5:fdt_simplefb_enable_existing_node	32	static
+common/fdt_simplefb.c:86:5:fdt_simplefb_enable_and_mem_rsv	48	static

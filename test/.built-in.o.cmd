@@ -1,0 +1,1 @@
+cmd_test/built-in.o :=  rm -f test/built-in.o; aarch64-linux-gnu-ar cDPrsT test/built-in.o test/test-main.o test/cmd/built-in.o test/cmd_ut.o test/command_ut.o test/dm/built-in.o test/lib/built-in.o test/rpi4_test.o test/print_ut.o test/str_ut.o test/ut.o test/boot/built-in.o test/common/built-in.o test/log/built-in.o

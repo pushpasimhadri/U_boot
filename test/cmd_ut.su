@@ -1,0 +1,4 @@
+test/cmd_ut.c:140:12:do_ut	48	static
+test/cmd_ut.c:131:12:do_ut_info	16	static
+test/cmd_ut.c:114:12:do_ut_all	64	static
+test/cmd_ut.c:20:5:cmd_ut_category	80	static

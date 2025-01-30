@@ -1,0 +1,5 @@
+test/boot/bootdev.c:24:12:bootdev_test_cmd_list	112	static
+test/boot/bootdev.c:52:12:bootdev_test_cmd_select	96	static
+test/boot/bootdev.c:102:12:bootdev_test_labels	80	static
+test/boot/bootdev.c:123:12:bootdev_test_order	288	static
+test/boot/bootdev.c:186:12:bootdev_test_prio	288	static

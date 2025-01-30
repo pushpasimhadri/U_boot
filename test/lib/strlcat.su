@@ -1,0 +1,2 @@
+test/lib/strlcat.c:17:12:do_test_strlcat	112	static
+test/lib/strlcat.c:84:12:lib_test_strlcat	96	static

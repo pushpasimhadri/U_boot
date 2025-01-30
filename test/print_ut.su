@@ -1,0 +1,8 @@
+test/print_ut.c:28:12:print_guid	144	static
+test/print_ut.c:67:12:print_efi_ut	80	static
+test/print_ut.c:348:12:snprint	96	static
+test/print_ut.c:101:12:print_printf	512	static
+test/print_ut.c:168:12:print_display_buffer	32	static
+test/print_ut.c:247:12:print_hexdump_line	48	static
+test/print_ut.c:273:12:print_do_hex_dump	48	static
+test/print_ut.c:374:5:do_ut_print	0	static

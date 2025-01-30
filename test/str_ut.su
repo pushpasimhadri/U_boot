@@ -1,0 +1,11 @@
+test/str_ut.c:26:12:str_upper	288	static
+test/str_ut.c:64:12:run_strtoul	288	static
+test/str_ut.c:82:12:str_simple_strtoul	96	static
+test/str_ut.c:118:12:run_strtoull	288	static
+test/str_ut.c:137:12:str_simple_strtoull	112	static
+test/str_ut.c:181:12:str_hextoul	64	static
+test/str_ut.c:193:12:str_dectoul	64	static
+test/str_ut.c:245:12:str_trailing	128	static
+test/str_ut.c:205:12:str_itoa	48	static
+test/str_ut.c:225:12:str_xtoa	48	static
+test/str_ut.c:277:5:do_ut_str	0	static

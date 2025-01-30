@@ -1,0 +1,3 @@
+test/boot/bootstd_common.c:24:5:bootstd_setup_for_tests	656	static
+test/boot/bootstd_common.c:58:5:bootstd_test_drop_bootdev_order	64	static
+test/boot/bootstd_common.c:70:5:do_ut_bootstd	32	static

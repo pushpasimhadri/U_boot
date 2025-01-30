@@ -1,0 +1,14 @@
+drivers/video/vidconsole-uclass.c:141:13:set_cursor_position	0	static
+drivers/video/vidconsole-uclass.c:561:12:vidconsole_pre_probe	32	static
+drivers/video/vidconsole-uclass.c:118:14:parsenum	48	static
+drivers/video/vidconsole-uclass.c:573:12:vidconsole_post_probe	32	static
+drivers/video/vidconsole-uclass.c:27:5:vidconsole_putc_xy	0	static
+drivers/video/vidconsole-uclass.c:36:5:vidconsole_move_rows	0	static
+drivers/video/vidconsole-uclass.c:46:5:vidconsole_set_row	0	static
+drivers/video/vidconsole-uclass.c:89:13:vidconsole_newline	48	static
+drivers/video/vidconsole-uclass.c:125:6:vidconsole_set_cursor_pos	32	static
+drivers/video/vidconsole-uclass.c:459:5:vidconsole_put_char	64	static
+drivers/video/vidconsole-uclass.c:519:13:vidconsole_putc	32	static
+drivers/video/vidconsole-uclass.c:505:5:vidconsole_put_string	32	static
+drivers/video/vidconsole-uclass.c:538:13:vidconsole_puts	32	static
+drivers/video/vidconsole-uclass.c:620:6:vidconsole_position_cursor	48	static

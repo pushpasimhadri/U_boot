@@ -1,0 +1,6 @@
+test/lib/string.c:36:13:init_buffer	0	static
+test/lib/string.c:111:12:test_memmove	32	static
+test/lib/string.c:134:12:lib_memcpy	192	static
+test/lib/string.c:172:12:lib_memmove	144	static
+test/lib/string.c:200:12:lib_memdup	256	static
+test/lib/string.c:77:12:lib_memset	144	static

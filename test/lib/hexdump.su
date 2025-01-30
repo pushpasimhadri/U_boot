@@ -1,0 +1,3 @@
+test/lib/hexdump.c:38:12:lib_test_hex2bin	208	static
+test/lib/hexdump.c:68:12:lib_test_bin2hex	64	static
+test/lib/hexdump.c:13:12:lib_test_hex_to_bin	32	static

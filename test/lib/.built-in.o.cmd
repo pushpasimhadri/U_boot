@@ -1,0 +1,1 @@
+cmd_test/lib/built-in.o :=  rm -f test/lib/built-in.o; aarch64-linux-gnu-ar cDPrsT test/lib/built-in.o test/lib/cmd_ut_lib.o test/lib/abuf.o test/lib/efi_device_path.o test/lib/hexdump.o test/lib/lmb.o test/lib/longjmp.o test/lib/string.o test/lib/strlcat.o

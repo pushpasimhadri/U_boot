@@ -1,0 +1,5 @@
+test/test-main.c:437:12:ut_run_test_live_flat	128	static
+test/test-main.c:263:12:dm_test_restore.constprop.isra	16	static
+test/test-main.c:63:25:test_get_state	0	static
+test/test-main.c:68:6:test_set_state	0	static
+test/test-main.c:583:5:ut_run_list	1296	static

@@ -1,0 +1,1 @@
+cmd_test/overlay/built-in.o :=  rm -f test/overlay/built-in.o; aarch64-linux-gnu-ar cDPrsT test/overlay/built-in.o test/overlay/cmd_ut_overlay.o test/overlay/test-fdt-base.dtb.o test/overlay/test-fdt-overlay.dtb.o test/overlay/test-fdt-overlay-stacked.dtb.o

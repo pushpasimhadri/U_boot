@@ -1,0 +1,11 @@
+test/boot/bootflow.c:23:12:inject_response	32	static
+test/boot/bootflow.c:230:12:bootflow_iter	288	static
+test/boot/bootflow.c:355:12:bootflow_iter_disable	288	static
+test/boot/bootflow.c:40:12:bootflow_cmd	80	static
+test/boot/bootflow.c:68:12:bootflow_cmd_label	48	static
+test/boot/bootflow.c:171:12:bootflow_cmd_info	64	static
+test/boot/bootflow.c:208:12:bootflow_scan_boot	48	static
+test/boot/bootflow.c:436:12:bootflow_cmd_boot	48	static
+test/boot/bootflow.c:91:12:bootflow_cmd_glob	80	static
+test/boot/bootflow.c:123:12:bootflow_cmd_scan_e	96	static
+test/boot/bootflow.c:395:12:bootflow_scan_glob_bootmeth	80	static

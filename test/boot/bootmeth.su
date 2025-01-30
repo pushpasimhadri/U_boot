@@ -1,0 +1,5 @@
+test/boot/bootmeth.c:135:12:bootmeth_env	80	static
+test/boot/bootmeth.c:161:12:bootmeth_state	112	static
+test/boot/bootmeth.c:18:12:bootmeth_cmd_list	48	static
+test/boot/bootmeth.c:111:12:bootmeth_cmd_order_glob	64	static
+test/boot/bootmeth.c:38:12:bootmeth_cmd_order	96	static
