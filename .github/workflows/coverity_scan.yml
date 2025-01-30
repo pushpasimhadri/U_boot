@@ -24,7 +24,7 @@ jobs:
       - name: Download Coverity Scan Tool
         run: |
           mkdir -p coverity_tool
-            wget --header="https://scan.coverity.com/download/linux64?project=pushpasimhadri/U_boot" \
+            wget "https://scan.coverity.com/download/linux64?project=pushpasimhadri/U_boot" \
             -O coverity_tool.tgz
             sleep 5
           done
