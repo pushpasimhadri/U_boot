@@ -19,6 +19,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget curl tar build-essential
+          sudo apt install gcc-aarch64-linux-gnu
 
       # Step 3: Download Coverity Scan Tool with Authentication
       - name: Download Coverity Scan Tool
