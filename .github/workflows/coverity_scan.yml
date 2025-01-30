@@ -24,11 +24,8 @@ jobs:
       - name: Download Coverity Scan Tool
         run: |
           mkdir -p coverity_tool
-          for i in {1..5}; do
-            wget --header="Authorization: token ${{ secrets.COVERITY_SCAN_TOKEN }}" \
-            "https://scan.coverity.com/download/linux64?project=pushpasimhadri/U_boot" \
-            -O coverity_tool.tgz && break
-            echo "Retrying download... ($i/5)"
+            wget --header="https://scan.coverity.com/download/linux64?project=pushpasimhadri/U_boot" \
+            -O coverity_tool.tgz
             sleep 5
           done
           if [ ! -f coverity_tool.tgz ]; then
