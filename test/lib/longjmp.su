@@ -1,0 +1,3 @@
+test/lib/longjmp.c:28:22:test_longjmp	0	static
+test/lib/longjmp.c:48:12:test_setjmp	144	static
+test/lib/longjmp.c:62:12:lib_test_longjmp	48	static

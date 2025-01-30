@@ -1,0 +1,31 @@
+# 0 "test/overlay/.test-fdt-overlay-stacked.dtb.pre.tmp"
+# 0 "<built-in>"
+# 0 "<command-line>"
+# 1 "././include/linux/kconfig.h" 1
+
+
+
+# 1 "include/generated/autoconf.h" 1
+# 5 "././include/linux/kconfig.h" 2
+# 0 "<command-line>" 2
+# 1 "test/overlay/.test-fdt-overlay-stacked.dtb.pre.tmp"
+
+
+
+
+
+
+
+/dts-v1/;
+/plugin/;
+
+/ {
+
+ fragment@0 {
+  target = <&local>;
+
+  __overlay__ {
+   stacked-test-int-property = <43>;
+  };
+ };
+};

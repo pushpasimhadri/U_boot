@@ -1,0 +1,2 @@
+test/env/attr.c:13:12:env_test_attrs_lookup	112	static
+test/env/attr.c:64:12:env_test_attrs_lookup_regex	112	static

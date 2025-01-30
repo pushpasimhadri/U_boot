@@ -1,0 +1,1 @@
+test/overlay/test-fdt-overlay.dtb: test/overlay/.test-fdt-overlay.dtb.dts.tmp

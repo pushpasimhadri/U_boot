@@ -1,0 +1,16 @@
+drivers/video/video-uclass.c:81:14:alloc_fb.isra	32	static
+drivers/video/video-uclass.c:513:12:video_post_bind	48	static
+drivers/video/video-uclass.c:74:6:video_set_flush_dcache	32	static
+drivers/video/video-uclass.c:103:5:video_reserve	48	static
+drivers/video/video-uclass.c:195:5:video_index_to_colour	0	static
+drivers/video/video-uclass.c:231:6:video_set_default_colors	32	static
+drivers/video/video-uclass.c:258:5:video_sync	32	static
+drivers/video/video-uclass.c:129:5:video_fill	32	static
+drivers/video/video-uclass.c:164:5:video_clear	32	static
+drivers/video/video-uclass.c:436:12:video_post_probe	112	static
+drivers/video/video-uclass.c:294:6:video_sync_all	32	static
+drivers/video/video-uclass.c:310:6:video_is_active	32	static
+drivers/video/video-uclass.c:324:5:video_get_xsize	16	static
+drivers/video/video-uclass.c:331:5:video_get_ysize	16	static
+drivers/video/video-uclass.c:409:7:video_get_u_boot_logo	0	static
+drivers/video/video-uclass.c:424:5:video_default_font_height	16	static

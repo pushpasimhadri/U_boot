@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-bcm283x/built-in.o :=  rm -f arch/arm/mach-bcm283x/built-in.o; aarch64-linux-gnu-ar cDPrsT arch/arm/mach-bcm283x/built-in.o arch/arm/mach-bcm283x/init.o arch/arm/mach-bcm283x/reset.o arch/arm/mach-bcm283x/mbox.o arch/arm/mach-bcm283x/msg.o arch/arm/mach-bcm283x/phys2bus.o

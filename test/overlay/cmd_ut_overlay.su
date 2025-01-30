@@ -1,0 +1,12 @@
+test/overlay/cmd_ut_overlay.c:30:12:ut_fdt_getprop_u32_by_index	64	static
+test/overlay/cmd_ut_overlay.c:108:12:fdt_overlay_add_node_by_phandle	32	static
+test/overlay/cmd_ut_overlay.c:121:12:fdt_overlay_add_node_by_path	32	static
+test/overlay/cmd_ut_overlay.c:134:12:fdt_overlay_add_subnode_property	48	static
+test/overlay/cmd_ut_overlay.c:148:12:fdt_overlay_local_phandle	96	static
+test/overlay/cmd_ut_overlay.c:172:12:fdt_overlay_local_phandles	96	static
+test/overlay/cmd_ut_overlay.c:57:12:fdt_getprop_str.constprop	64	static
+test/overlay/cmd_ut_overlay.c:96:12:fdt_overlay_add_str_property	80	static
+test/overlay/cmd_ut_overlay.c:84:12:fdt_overlay_change_str_property	80	static
+test/overlay/cmd_ut_overlay.c:72:12:fdt_overlay_change_int_property	64	static
+test/overlay/cmd_ut_overlay.c:202:12:fdt_overlay_stacked	64	static
+test/overlay/cmd_ut_overlay.c:214:5:do_ut_overlay	96	static

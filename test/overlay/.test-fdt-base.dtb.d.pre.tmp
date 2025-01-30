@@ -1,0 +1,2 @@
+.test-fdt-base.dtb.pre.o: test/overlay/.test-fdt-base.dtb.pre.tmp \
+ include/linux/kconfig.h include/generated/autoconf.h

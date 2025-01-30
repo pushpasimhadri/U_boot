@@ -1,0 +1,13 @@
+test/ut.c:20:6:ut_fail	32	static
+test/ut.c:28:6:ut_failf	112	static
+test/ut.c:42:7:ut_check_free	64	static
+test/ut.c:49:6:ut_check_delta	32	static
+test/ut.c:68:5:ut_check_console_line	144	static
+test/ut.c:89:5:ut_check_console_linen	144	static
+test/ut.c:111:5:ut_check_skipline	0	static
+test/ut.c:124:5:ut_check_skip_to_line	144	static
+test/ut.c:150:5:ut_check_console_end	0	static
+test/ut.c:163:5:ut_check_console_dump	0	static
+test/ut.c:187:6:ut_silence_console	0	static
+test/ut.c:197:6:ut_unsilence_console	0	static
+test/ut.c:202:6:ut_set_skip_delays	0	static

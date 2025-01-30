@@ -1,0 +1,4 @@
+test/env/hashtable.c:18:12:htab_fill	176	static
+test/env/hashtable.c:38:12:htab_check_fill	160	static
+test/env/hashtable.c:90:12:env_test_htab_fill	80	static
+test/env/hashtable.c:110:12:env_test_htab_deletes	208	static

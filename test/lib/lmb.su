@@ -1,0 +1,17 @@
+test/lib/lmb.c:20:12:check_lmb	48	static
+test/lib/lmb.c:428:12:lib_test_lmb_overlapping_reserve	480	static
+test/lib/lmb.c:668:12:lib_test_lmb_max_regions	480	static
+test/lib/lmb.c:228:12:test_bigblock	512	static
+test/lib/lmb.c:295:12:test_noreserved	544	static
+test/lib/lmb.c:387:12:lib_test_lmb_at_0	496	static
+test/lib/lmb.c:470:12:test_alloc_addr	544	static
+test/lib/lmb.c:597:12:test_get_unreserved_size	512	static
+test/lib/lmb.c:732:12:lib_test_lmb_flags	496	static
+test/lib/lmb.c:279:12:lib_test_lmb_big	32	static
+test/lib/lmb.c:354:12:lib_test_lmb_noreserved	32	static
+test/lib/lmb.c:369:12:lib_test_lmb_unaligned_size	32	static
+test/lib/lmb.c:581:12:lib_test_lmb_alloc_addr	32	static
+test/lib/lmb.c:652:12:lib_test_lmb_get_free_size	32	static
+test/lib/lmb.c:59:12:test_multi_alloc.constprop	592	static
+test/lib/lmb.c:212:12:lib_test_lmb_simple_x2	32	static
+test/lib/lmb.c:196:12:lib_test_lmb_simple	32	static

@@ -1,0 +1,10 @@
+test/lib/abuf.c:69:12:lib_test_abuf_realloc	0	static
+test/lib/abuf.c:223:12:lib_test_abuf_uninit_move	16	static
+test/lib/abuf.c:359:12:lib_test_abuf_init	80	static
+test/lib/abuf.c:18:12:lib_test_abuf_set	96	static
+test/lib/abuf.c:130:12:lib_test_abuf_realloc_size	80	static
+test/lib/abuf.c:51:12:lib_test_abuf_map_sysmem	80	static
+test/lib/abuf.c:296:12:lib_test_abuf_uninit	80	static
+test/lib/abuf.c:319:12:lib_test_abuf_init_set	80	static
+test/lib/abuf.c:333:12:lib_test_abuf_init_move	0	static
+test/lib/abuf.c:159:12:lib_test_abuf_large	0	static
