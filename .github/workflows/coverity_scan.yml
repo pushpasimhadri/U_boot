@@ -61,6 +61,6 @@ jobs:
                --form version=Coverity_Test_Build \
                --form description="Coverity Scan Build" \
                --form file_name="cov-int.tgz" \
-               https://scan.coverity.com/projects/31320/builds/init \
+               https://scan.coverity.com/builds?project=pushpasimhadri%2FU_boot \
                | tee response
 
