@@ -41,8 +41,6 @@ jobs:
 
       # Step 5: Build the code using Coverity
       - name: Build Code with Coverity
-          variables: 
-               CROSS_COMPILE: "aarch64-linux-gnu-" # Define the cross-compiler
         run: |
           coverity_tool/bin/cov-build --dir cov-int make rpi_4_defconfig 
           coverity_tool/bin/cov-build --dir cov-int make CROSS_COMPILE=aarch64-linux-gnu- -j6
