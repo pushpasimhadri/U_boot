@@ -42,7 +42,9 @@ jobs:
       # Step 5: Build the code using Coverity
       - name: Build Code with Coverity
         run: |
-          coverity_tool/bin/cov-build --dir cov-int make -j$(nproc)
+          CROSS_COMPILE=$CROSS_COMPILE make rpi_4_defconfig
+          
+          coverity_tool/bin/cov-build --dir cov-int CROSS_COMPILE=$CROSS_COMPILE make -j6
 
       # Step 6: Compress the results directory for upload
       - name: Compress Coverity Results
