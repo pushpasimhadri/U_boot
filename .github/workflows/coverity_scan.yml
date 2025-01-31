@@ -25,9 +25,9 @@ jobs:
       - name: Download Coverity Scan Tool
         run: |
           mkdir -p coverity_tool
-            wget https://scan.coverity.com/download/linux64 --post-data "token=cKnM8RghCiyxfoXsPAkZtg&project=pushpasimhadri%2FU_boot" -O coverity_tool.tgz
+          wget https://scan.coverity.com/download/linux64 --post-data "token=cKnM8RghCiyxfoXsPAkZtg&project=pushpasimhadri%2FU_boot" -O coverity_tool.tgz
           if [ ! -f coverity_tool.tgz ]; then
-            echo "Failed to download Coverity Scan Tool after 5 attempts."
+            echo "Failed to download Coverity Scan Tool."
             exit 1
           fi
           tar -xvzf coverity_tool.tgz -C coverity_tool --strip-components=1
@@ -44,7 +44,7 @@ jobs:
       - name: Build Code with Coverity
         run: |
           export CROSS_COMPILE=aarch64-linux-gnu-
-          coverity_tool/bin/cov-build --dir cov-int make rpi_4_defconfig 
+          coverity_tool/bin/cov-build --dir cov-int make rpi_4_defconfig
           coverity_tool/bin/cov-build --dir cov-int make -j6
 
       # Step 6: Compress the results directory for upload
@@ -52,15 +52,9 @@ jobs:
         run: |
           tar -czvf cov-int.tgz cov-int
 
-      # Step 7: Upload Coverity Results
-      - name: Upload Coverity Results
-        run: |
-          curl --form token=cKnM8RghCiyxfoXsPAkZtg  \
-               --form email=pushpa-latha.simhadri@capgemini.com \
-               --form file=@cov-int.tgz \
-               --form version=Coverity_Test_Build \
-               --form description="Coverity Scan Build" \
-               --form file_name="cov-int.tgz" \
-               https://scan.coverity.com/builds?project=pushpasimhadri%2FU_boot \
-               | tee response
-
+      # Step 7: Upload Coverity Results as Artifact
+      - name: Upload Coverity Results as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverity-results
+          path: cov-int.tgz
